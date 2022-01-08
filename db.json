@@ -1,0 +1,17 @@
+{
+	"jobs": [
+		{
+			"company": "Photosnap",
+			"tags": ["New!", "Featured"],
+			"title": "Senior Frontend Developer",
+			"date": "1d ago",
+			"type": "Full time",
+			"location": "USA only",
+			"role": "Frontend",
+			"Level": "Senior",
+			"languages": ["HTML", "CSS", "Javascript"]
+		}
+	]
+}
+
+
