@@ -1,0 +1,41 @@
+{
+  "name": "static-job-listings-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Job listings with filtering coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint src/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jhessiny/Job-listings-vanilla-js.git"
+  },
+  "keywords": [],
+  "author": "Jhessiny Mattos <jhessinymattos@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jhessiny/Job-listings-vanilla-js/issues"
+  },
+  "homepage": "https://github.com/Jhessiny/Job-listings-vanilla-js#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "@babel/register": "^7.16.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.47.0",
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "husky": "^7.0.4"
+  }
+}
