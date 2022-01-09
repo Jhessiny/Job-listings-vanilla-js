@@ -1,0 +1,9 @@
+.header {
+	height: 15.5rem;
+	background-repeat: no-repeat;
+
+	background: url("/dist/images/bg-header-desktop.svg") no-repeat,
+		linear-gradient(rgb(91, 164, 164), rgba(91, 164, 164));
+	background-size: cover;
+	object-fit: contain;
+}
