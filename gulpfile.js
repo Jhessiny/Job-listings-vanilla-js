@@ -21,7 +21,7 @@ function compilescss() {
 
 //optimize and move images
 function optimizeimg() {
-	return src("src/images/*.{jpg,png}") // change to your source directory
+	return src("src/images/*.{jpg,png,svg}") // change to your source directory
 		.pipe(
 			imagemin([
 				imagemin.mozjpeg({ quality: 80, progressive: true }),
