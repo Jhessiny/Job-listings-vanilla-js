@@ -20,8 +20,8 @@ class App {
 			<div class="jobs__info">
 				<div class="jobs__info__head">
 					<span class="jobs__info__company">${item.company}</span>
-					${item.new && `<span class="jobs__info__tag jobs__info__tag--new">NEW!</span>`}
-					${item.new && `<span class="jobs__info__tag jobs__info__tag--featured">FEATURED</span>`}
+					${item.new ? `<span class="jobs__info__tag jobs__info__tag--new">NEW!</span>` : ""}
+					${item.new ? `<span class="jobs__info__tag jobs__info__tag--featured">FEATURED</span>` : ""}
 				</div>
 				<h2 class="jobs__info__title">${item.position}</h2>
 				<div class="jobs__footer">
