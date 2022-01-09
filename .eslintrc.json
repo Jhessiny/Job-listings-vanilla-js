@@ -12,6 +12,8 @@
 		"quotes": ["error", "double", { "allowTemplateLiterals": true }],
 		"indent": [2, "tab"],
 		"no-tabs": 0,
+		"lines-between-class-members": 0,
+		"class-methods-use-this": 0,
 		"object-curly-newline": [
 			"error",
 			{
@@ -20,10 +22,9 @@
 				"ImportDeclaration": "never",
 				"ExportDeclaration": { "multiline": false }
 			}
-		],
+		]
 		// "no-ternary": 0
 		// "no-unused-vars": "off",
-		"class-methods-use-this": 0
 	},
 	"ignorePatterns": ["tests/**/*.spec.js"]
 }
