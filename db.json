@@ -10,8 +10,105 @@
 			"role": "Frontend",
 			"Level": "Senior",
 			"languages": ["HTML", "CSS", "Javascript"]
+		},
+		{
+			"company": "Manage",
+			"tags": ["New!", "Featured"],
+			"title": "Fullstack Developer",
+			"date": "1d ago",
+			"type": "Part time",
+			"location": "Remote",
+			"role": "Fullstack",
+			"Level": "Midweight",
+			"languages": ["Python", "React"]
+		},
+		{
+			"company": "Account",
+			"tags": ["New!"],
+			"title": "Junior Frontend Developer",
+			"date": "2d ago",
+			"type": "Part time",
+			"location": "USA only",
+			"role": "Frontend",
+			"Level": "Junior",
+			"languages": ["React", "Sass"]
+		},
+		{
+			"company": "MyHome",
+			"tags": [],
+			"title": "Junior Frontend Developer",
+			"date": "5d ago",
+			"type": "Contract",
+			"location": "USA only",
+			"role": "Frontend",
+			"Level": "Junior",
+			"languages": ["CSS", "Javascript"]
+		},
+		{
+			"company": "Loop Studios",
+			"tags": [],
+			"title": "Software Engineer",
+			"date": "1w ago",
+			"type": "Full time",
+			"location": "Worldwide",
+			"role": "Backend",
+			"Level": "Midweight",
+			"languages": ["Sass0", "Ruby"]
+		},
+		{
+			"company": "FaceIt",
+			"tags": [],
+			"title": "Junior Backend Developer",
+			"date": "2w ago",
+			"type": "Full time",
+			"location": "UK only",
+			"role": "Fullstack",
+			"Level": "Junior",
+			"languages": ["RoR"]
+		},
+		{
+			"company": "Shortly",
+			"tags": [],
+			"title": "Junior Developer",
+			"date": "2w ago",
+			"type": "Full time",
+			"location": "Worldwide",
+			"role": "Fullstack",
+			"Level": "Junior",
+			"languages": ["Sass", "HTML"]
+		},
+		{
+			"company": "Insure",
+			"tags": [],
+			"title": "Junior Frontend Developer",
+			"date": "2w ago",
+			"type": "Full time",
+			"location": "USA only",
+			"role": "Frontend",
+			"Level": "Junior",
+			"languages": ["Sass", "Vue"]
+		},
+		{
+			"company": "Eyecam Co.",
+			"tags": [],
+			"title": "Full Stack Engineer",
+			"date": "3w ago",
+			"type": "Full time",
+			"location": "Worldwide",
+			"role": "Fullstack",
+			"Level": "Midweight",
+			"languages": ["Pyhton", "Django"]
+		},
+		{
+			"company": "The Air Filter Company",
+			"tags": [],
+			"title": "Front-end Dev",
+			"date": "1mo ago",
+			"type": "Part time",
+			"location": "Worldwide",
+			"role": "Frontend",
+			"Level": "Junior",
+			"languages": ["Sass", "React"]
 		}
 	]
 }
-
-
