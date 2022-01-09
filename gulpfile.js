@@ -7,8 +7,8 @@ const plumber = require("gulp-plumber");
 const uglify = require("gulp-uglify");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
+const sourcemaps = require("gulp-sourcemaps");
 const imagewebp = require("gulp-webp");
-
 
 //compile, prefix, and min scss
 function compilescss() {
@@ -56,6 +56,7 @@ function jsmin() {
 		)
 		.pipe(uglify())
 		.pipe(rename({ extname: ".min.js" }))
+		.pipe(sourcemaps.write())
 		.pipe(dest("dist/"));
 }
 
