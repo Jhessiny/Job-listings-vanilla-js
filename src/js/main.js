@@ -1,7 +1,8 @@
 class App {
 	jobs = [];
-
 	list = document.querySelector(".jobs");
+	appliedFilters = [];
+	filtersEl = document.querySelector(".filters");
 
 	constructor() {
 		this.displayJobs();
@@ -10,7 +11,7 @@ class App {
 	generateItemTemplate(item) {
 		let tagsTemplate = "";
 		[item.role, item.level, ...item.languages, ...item.tools].forEach((el) => {
-			tagsTemplate += `<li class="jobs__tags-item">${el}</li>`;
+			tagsTemplate += `<li class="jobs__tags-item" data-filter="${el}">${el}</li>`;
 		});
 		const html = `
 		<div class="jobs__item ${item.featured && `jobs__item--featured`}">
@@ -20,8 +21,16 @@ class App {
 			<div class="jobs__info">
 				<div class="jobs__info__head">
 					<span class="jobs__info__company">${item.company}</span>
-					${item.new ? `<span class="jobs__info__tag jobs__info__tag--new">NEW!</span>` : ""}
-					${item.new ? `<span class="jobs__info__tag jobs__info__tag--featured">FEATURED</span>` : ""}
+					${
+						item.new
+							? `<span class="jobs__info__tag jobs__info__tag--new">NEW!</span>`
+							: ""
+					}
+					${
+						item.new
+							? `<span class="jobs__info__tag jobs__info__tag--featured">FEATURED</span>`
+							: ""
+					}
 				</div>
 				<h2 class="jobs__info__title">${item.position}</h2>
 				<div class="jobs__footer">
@@ -49,12 +58,52 @@ class App {
 				const html = this.generateItemTemplate(element);
 				this.list.insertAdjacentHTML("beforeend", html);
 			});
+			document.querySelectorAll(".jobs__tags-item").forEach((el) => {
+				el.addEventListener("click", (e) => this.applyFilter(e.target));
+			});
 		} catch (err) {
 			console.error(err);
 		}
+	}
+
+	applyFilter(tag) {
+		const { filter } = tag.dataset;
+		if (this.appliedFilters.find((fil) => fil === filter)) return;
+		this.appliedFilters.push(filter);
+		this.updateFilters();
+	}
+
+	removeFilter(filter) {
+		this.appliedFilters = this.appliedFilters.filter((f) => f !== filter);
+		this.updateFilters();
+	}
+
+	updateFilters() {
+		this.filtersEl.innerHTML = "";
+		this.appliedFilters.forEach((item) => {
+			const html = `
+			<li class="filters__item" data-filter="${item}">
+			<span>${item}</span>
+			<span class="filters__close">&#x2715;</span>
+		</li>`;
+			this.filtersEl.insertAdjacentHTML("beforeend", html);
+		});
+		// document.querySelector(".filters__close").closest(".filters");
+
+		this.filtersEl.addEventListener("click", (e) => {
+			this.removeFilter(e.target.closest(".filters__item").dataset.filter);
+		});
+
+		// console.log(items);
+		// parent.addEventListener("click", (e) => {
+		// 	console.log(e.target);
+		// });
+		// });
 	}
 }
 
 /* eslint-disable */
 const app = new App();
 /* eslint-disable */
+
+const a = "09";
