@@ -66,6 +66,11 @@
 		&__title {
 			font-size: 1.8rem;
 			margin-bottom: 0.3rem;
+
+			&:hover {
+				color: var(--color-primary);
+				cursor: pointer;
+			}
 		}
 	}
 
@@ -132,7 +137,7 @@
 	justify-content: space-between;
 	padding: 0 4rem;
 
-	&--hidden{
+	&--hidden {
 		display: none;
 	}
 
