@@ -1,7 +1,7 @@
 class App {
 	jobs = [];
 	displayedJobs = [];
-	list = document.querySelector(".jobs");
+	list = document.querySelector(".jobs__list");
 	appliedFilters = [];
 	filtersList = document.querySelector(".filters__list");
 	filtersBox = document.querySelector(".filters");
@@ -19,7 +19,7 @@ class App {
 			tagsTemplate += `<li class="jobs__tags-item" data-filter="${el}">${el}</li>`;
 		});
 		const html = `
-		<div class="jobs__item ${item.featured && `jobs__item--featured`}">
+		<div class="jobs__item ${item.featured ? `jobs__item--featured` : ``}">
 			<div class="jobs__company-img">
 				<img src="/dist${item.logo}" alt="company logo" />
 			</div>
